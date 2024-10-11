@@ -13,7 +13,7 @@ Explain the interactive behaviors of the prototype you created and include a
 state diagram (flowchart) to represent it.  For example, below is an example 
 state diagram included in the assignment description:  
 
-![state diagram example](state-diagram-example.jpg)  
+![State Diagram](Flow Chart Final.png)  
 
 ### Hardware
 
