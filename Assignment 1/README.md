@@ -28,7 +28,8 @@ The following hardware components were used in this project:
   
 Below is a wiring diagram showing how the components are connected. (Insert your wiring image here – can be hand-drawn or software-generated.)
 
-![Hand_Sketch_Connection](Sketch.png)  
+![Hand_Sketch_Connection](Sketch_1.png)  
+![Connection Photo](Connection.png)  
 
 ### Firmware   
 
