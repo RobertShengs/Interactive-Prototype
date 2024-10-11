@@ -66,6 +66,6 @@ State 2: A short button press changes the light to flash in a consistent pattern
 State 3: A long button press causes the light to remain constantly on, and releasing the button brings it back to irregular flashing.
 
 Below is a photo of the completed prototype
-![Prototype Picture](Paper-crane_Night_Light.png)  
+![Prototype Picture](Paper-Crane_Night_Light.png)  
 
-A video walkthrough can be found [here]
+A video walkthrough can be found [(https://drive.google.com/file/d/1aMsvLB0dlhTL9nYgkdLsyP1hr6YnVHst/view?usp=sharing)]
