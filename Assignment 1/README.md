@@ -45,7 +45,7 @@ if input_pin.value() == 0 and button_pressed_time == 0:
 if input_pin.value() == 1 and button_pressed_time != 0:
     button_released_time = current_time
     press_duration = button_released_time - button_pressed_time
-    if press_duration < 1000 and not long_press_detected:
+    if press_duration < 3000 and not long_press_detected:
         state = 2 if state == 1 else 1
     button_pressed_time = 0
     long_press_detected = False
