@@ -17,15 +17,18 @@ state diagram included in the assignment description:
 
 ### Hardware
 
-List all the separate hardware components used in your project and briefly 
-explain what they do. To create a list with markdown syntax, 
-use `-`, `*`, or `+` characters with each line of text:  
-* item 1  
-* item 2   
-* etc.  
+The following hardware components were used in this project:
 
-Include at least one image showing your hardware wiring. You can draw the wiring 
-connections by hand, use a graphical program, or take close-up photo(s).  
+- Atom3 board – A microcontroller used to control the light bulb and process button inputs.
+- Button (connected to Pin 7) – Acts as an input device to change the states of the system.
+- LED Bulb (connected to Pin 8) – The output device that responds with different lighting effects.
+- Wires and Breadboard – Used for setting up the circuit to connect the components.
+- Origami Crane made of paper
+- Copper Tape – Used to adhere and secure non-critical parts of the circuit.
+  
+Below is a wiring diagram showing how the components are connected. (Insert your wiring image here – can be hand-drawn or software-generated.)
+
+![Hand Sketch Connection](Sketch.png)  
 
 ### Firmware   
 
