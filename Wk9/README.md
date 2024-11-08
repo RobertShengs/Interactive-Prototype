@@ -28,9 +28,20 @@ Below is a wiring diagram showing the connections between components.
 
 ![Connection Photo](Wristband_Connection.png)  
 
+### Project Outcome
+
+The wristband successfully operates as designed, with the following states:
+
+- **Normal State** – LED is off, continuously monitoring movement.
+- **Drowning Alert State** –  LED turns red and “b” is sent when stationary for 5 seconds or when the button is pressed, prompting ProtoPie to display the alert UI.
+- **Reset State** – If no inactivity or button press for 5 seconds, “a” is sent to reset ProtoPie’s UI to the normal state.
+
+
 ### Firmware   
 
 The firmware for this project was written in MicroPython, designed to manage both accelerometer data and button inputs, triggering alerts when necessary. Below is a key code snippet that demonstrates how the program detects inactivity and button presses to transition between states:
+————————————————————————————————
+This code snippet handles the detection of prolonged inactivity or button presses, changing LED states and sending signals (“b” for alerts, “a” to reset) to ProtoPie to manage the UI response.
 
 ```Python
 import os, sys, io
@@ -86,13 +97,4 @@ while True:
 
     time.sleep_ms(100)
 
-————————————————————————————————
-This code snippet handles the detection of prolonged inactivity or button presses, changing LED states and sending signals (“b” for alerts, “a” to reset) to ProtoPie to manage the UI response.
 
-### Project Outcome
-
-The wristband successfully operates as designed, with the following states:
-
-- **Normal State** – LED is off, continuously monitoring movement.
-- **Drowning Alert State** –  LED turns red and “b” is sent when stationary for 5 seconds or when the button is pressed, prompting ProtoPie to display the alert UI.
-- **Reset State** – If no inactivity or button press for 5 seconds, “a” is sent to reset ProtoPie’s UI to the normal state.
