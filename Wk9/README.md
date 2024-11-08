@@ -26,7 +26,6 @@ The following hardware components were used in this project:
 
 Below is a wiring diagram showing the connections between components.
 
-![Wiring Diagram](Wiring_Diagram.png)  
 ![Connection Photo](Wristband_Connection.png)  
 
 ### Firmware   
