@@ -15,6 +15,8 @@ The state diagram below illustrates the interactive behavior of the wristband, s
 
 ![State Diagram](Flow_Chart_Drowning_Alert.png)  
 
+
+
 ### Hardware
 
 The following hardware components were used in this project:
@@ -27,6 +29,11 @@ The following hardware components were used in this project:
 Below is a wiring diagram showing the connections between components.
 
 ![Connection Photo](Wristband_Connection.png)  
+
+
+### UI Design
+![UIDesign 1](UIDesign1.png)  
+![UIDesign 2](UIDesign2.png)  
 
 ### Project Outcome
 
