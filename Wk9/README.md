@@ -86,10 +86,9 @@ while True:
         last_b_trigger_time = time.ticks_ms()  # Reset timer
 
     time.sleep_ms(100)
-、、、
 
+————————————————————————————————
 This code snippet handles the detection of prolonged inactivity or button presses, changing LED states and sending signals (“b” for alerts, “a” to reset) to ProtoPie to manage the UI response.
-
 
 ### Project Outcome
 
