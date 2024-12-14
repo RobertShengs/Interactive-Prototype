@@ -32,7 +32,6 @@ The hardware components used in this project are as follows:
 
 *(Include close-up photos of the wiring between these components.)*
 
----
 
 ### Firmware
 
@@ -82,7 +81,7 @@ When any of these conditions are met, the code will:
 - Update the UI to reflect the drowning state.
 
 
-
+---
 
 ## Software
 **ProtoPie Integration**
@@ -103,12 +102,14 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 ```
 
 
-
+---
 
 ## Integrations
 **ProtoPie Connect:**
 - Receives JSON-formatted signals ("a" for normal, "b" for alarm) from the firmware.
 - Debugging ProtoPie integration involved significant time due to configuration errors in signal handling.
+
+---
 
 ## Enclosure / Mechanical Design
 **Enclosure**
@@ -118,7 +119,7 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 - The pipe housing the LED strip was initially filled with support material during printing. A precise incision at the bottom allowed manual removal of this material before inserting the LED strip.
 
 
-
+---
 
 ## Project Outcome
 **Results**
@@ -128,7 +129,7 @@ The final prototype successfully demonstrates:
 - Real-time communication with ProtoPie for state visualization.
 
 
-
+---
 
 ## Conclusion
 **Reflections**
