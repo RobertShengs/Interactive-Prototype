@@ -48,19 +48,21 @@ The firmware was written in MicroPython and serves the following purposes:
 
 2. **LED Control**
   The RGB LED strip turns red to indicate an alarm condition:
-  ```pythonif heart_rate < heart_rate_threshold:
+  ```python
+  if heart_rate < heart_rate_threshold:
     rgb_strip.fill_color(0xFF0000)  # Set LEDs to red
   ```
 
-ProtoPie Communication: JSON-formatted signals are sent to ProtoPie for visualizing device states:
-
-python
+3. **ProtoPie Communication**
+JSON-formatted signals are sent to ProtoPie for visualizing device states:
+```python
 Copy code
 def send_to_protopie(signal):
     data = {"signal": signal}
     print(ujson.dumps(data) + "\n")  # Send signal to ProtoPie
-Key Features:
+```
 
+Key Features:
 Alarm Trigger: Triggers alarm ("b") if heart rate is below the threshold or if the device remains stationary beyond a specified duration.
 Normal State: Resets to normal state ("a") if no alarm condition persists for 5 seconds.
 
