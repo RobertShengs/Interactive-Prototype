@@ -10,6 +10,7 @@ This project simulates a heart rate monitoring device that integrates with Proto
 
 
 
+
 ### Hardware
 
 The hardware components used in this project are as follows:
@@ -62,19 +63,6 @@ def send_to_protopie(signal):
     print(ujson.dumps(data) + "\n")  # Send signal to ProtoPie
 ```
 
-**Mechanism Summary**
-The "b" drowning signal is triggered under the following three conditions:
-- Heart rate drops below 50 BPM (heart_rate < heart_rate_threshold).
-- The device remains stationary for more than 10 seconds (acceleration below the threshold and stationary time exceeding stationary_time_limit).
-- The user manually presses the button (BtnA.wasPressed()). 
-
-**When any of these conditions are met, the code will:**
-- Send the "b" signal to ProtoPie.
-- Turn on the red LED light.
-- Update the UI to reflect the drowning state.
-
-
-
 4. **Key Features**
 - **Alarm Trigger:** 
 Triggers alarm ("b") if heart rate is below the threshold or if the device remains stationary beyond a specified duration.
@@ -82,7 +70,21 @@ Triggers alarm ("b") if heart rate is below the threshold or if the device remai
 Resets to normal state ("a") if no alarm condition persists for 5 seconds.
 
 
-### Software
+**Mechanism Summary**
+The "b" drowning signal is triggered under the following three conditions:
+- Heart rate drops below 50 BPM (heart_rate < heart_rate_threshold).
+- The device remains stationary for more than 10 seconds (acceleration below the threshold and stationary time exceeding stationary_time_limit).
+- The user manually presses the button (BtnA.wasPressed()). 
+
+When any of these conditions are met, the code will:
+- Send the "b" signal to ProtoPie.
+- Turn on the red LED light.
+- Update the UI to reflect the drowning state.
+
+
+
+
+## Software
 **ProtoPie Integration**
 ProtoPie was used to visualize the device states based on signals sent from the firmware:
 
@@ -100,12 +102,15 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
     send_to_protopie("a")
 ```
 
-### Integrations
+
+
+
+## Integrations
 **ProtoPie Connect:**
 - Receives JSON-formatted signals ("a" for normal, "b" for alarm) from the firmware.
 - Debugging ProtoPie integration involved significant time due to configuration errors in signal handling.
 
-### Enclosure / Mechanical Design
+## Enclosure / Mechanical Design
 **Enclosure**
 **- Material:**
 - The enclosure was 3D-printed using a transparent elastic material for light transmission.
@@ -113,7 +118,9 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 - The pipe housing the LED strip was initially filled with support material during printing. A precise incision at the bottom allowed manual removal of this material before inserting the LED strip.
 
 
-### Project Outcome
+
+
+## Project Outcome
 **Results**
 The final prototype successfully demonstrates:
 - Simulated heart rate monitoring using an angle sensor.
@@ -121,7 +128,9 @@ The final prototype successfully demonstrates:
 - Real-time communication with ProtoPie for state visualization.
 
 
-### Conclusion
+
+
+## Conclusion
 **Reflections**
 **Challenges:**
 - Hardware: The pulse sensor’s environmental sensitivity required a shift to a more stable input device (angle sensor).
