@@ -135,6 +135,8 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 
 ![image](https://github.com/user-attachments/assets/56f99ca9-39a2-4068-aca0-37256235d2f3)
 
+**SolidWork File Google Drive Link:[https://drive.google.com/file/d/1-JBWmiaxpiLTTbvODO95cl1buqBtR9FX/view?usp=drive_link]**
+
 ---
 
 ## Project Outcome
@@ -143,6 +145,9 @@ The final prototype successfully demonstrates:
 - Simulated heart rate monitoring using an angle sensor.
 - Visual alarm state indication via an RGB LED strip.
 - Real-time communication with ProtoPie for state visualization.
+
+**- Final Video**
+**Google Drive Link:[https://drive.google.com/file/d/1v4odoNcBwqcUVjR2dKKWEDIZ-PCC9vpJ/view?usp=drive_link]**
 
 
 ---
