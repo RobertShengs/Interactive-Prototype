@@ -6,6 +6,11 @@ This project simulates a heart rate monitoring device that integrates with Proto
 
 ---
 
+## Research
+![image](https://github.com/user-attachments/assets/b8a00632-fb2e-496f-b792-90da3a9ee7e1)
+
+
+
 ## Implementation
 
 
