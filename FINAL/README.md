@@ -1,4 +1,4 @@
-# Heart Rate Simulation Device with ProtoPie Integration
+![image](https://github.com/user-attachments/assets/6056810d-1804-40ec-93a2-0e2c860ea18e)# Heart Rate Simulation Device with ProtoPie Integration
 
 ## Introduction
 
@@ -8,12 +8,11 @@ This project simulates a heart rate monitoring device that integrates with Proto
 
 ## Research
 ![image](https://github.com/user-attachments/assets/b8a00632-fb2e-496f-b792-90da3a9ee7e1)
+![image](https://github.com/user-attachments/assets/b2c4ca44-6878-4124-ae22-03c960e05ada)
 
 
 
 ## Implementation
-
-
 
 
 ### Hardware
@@ -29,6 +28,8 @@ The hardware components used in this project are as follows:
   - Initially used to measure heart rate directly but discarded due to its sensitivity to environmental light fluctuations.
 - **3D-Printed Enclosure**:
   - Protects the hardware while allowing LED light to pass through for visibility.
+![image](https://github.com/user-attachments/assets/f17f5141-82ff-4a16-9848-2e9ed9b80235)
+
 
 #### Wiring
 - The **RGB LED strip** is connected to the ATOM S3 Board via **pin 38**.
@@ -74,7 +75,9 @@ Triggers alarm ("b") if heart rate is below the threshold or if the device remai
 Resets to normal state ("a") if no alarm condition persists for 5 seconds.
 
 
-**Mechanism Summary**
+
+### Drowning Signal Triggering
+
 The "b" drowning signal is triggered under the following three conditions:
 - Heart rate drops below 50 BPM (heart_rate < heart_rate_threshold).
 - The device remains stationary for more than 10 seconds (acceleration below the threshold and stationary time exceeding stationary_time_limit).
@@ -113,6 +116,8 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 **ProtoPie Connect:**
 - Receives JSON-formatted signals ("a" for normal, "b" for alarm) from the firmware.
 - Debugging ProtoPie integration involved significant time due to configuration errors in signal handling.
+![image](https://github.com/user-attachments/assets/c45f9bad-c7c3-4632-9bf9-f71116be37da)
+
 
 ---
 
@@ -123,6 +128,7 @@ elif time.ticks_ms() - last_b_trigger_time > 5000:
 **- Challenges:**
 - The pipe housing the LED strip was initially filled with support material during printing. A precise incision at the bottom allowed manual removal of this material before inserting the LED strip.
 
+![image](https://github.com/user-attachments/assets/56f99ca9-39a2-4068-aca0-37256235d2f3)
 
 ---
 
@@ -138,6 +144,7 @@ The final prototype successfully demonstrates:
 
 ## Conclusion
 **Reflections**
+
 **Challenges:**
 - Hardware: The pulse sensor’s environmental sensitivity required a shift to a more stable input device (angle sensor).
 - Software: Debugging the ProtoPie connection consumed significant time due to incorrect settings.
