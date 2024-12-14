@@ -28,6 +28,10 @@ The hardware components used in this project are as follows:
   - Initially used to measure heart rate directly but discarded due to its sensitivity to environmental light fluctuations.
 - **3D-Printed Enclosure**:
   - Protects the hardware while allowing LED light to pass through for visibility.
+
+- MVP Test
+![image](https://github.com/user-attachments/assets/f9f967d3-4053-4b96-a297-47fe7099aeee)
+
 ![image](https://github.com/user-attachments/assets/f17f5141-82ff-4a16-9848-2e9ed9b80235)
 
 
@@ -36,7 +40,8 @@ The hardware components used in this project are as follows:
 - The **angle sensor** is connected to the analog input pin (ADC) on **pin 1**.
 - The pulse sensor (when tested) was also connected to pin 1 but was replaced in the final implementation.
 
-*(Include close-up photos of the wiring between these components.)*
+![image](https://github.com/user-attachments/assets/c35a11a4-01d0-4085-96b3-a19a5edce045)
+
 
 
 ### Firmware
