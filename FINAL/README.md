@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6056810d-1804-40ec-93a2-0e2c860ea18e)# Heart Rate Simulation Device with ProtoPie Integration
+# Heart Rate Simulation Device with ProtoPie Integration
 
 ## Introduction
 
